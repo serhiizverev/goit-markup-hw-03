@@ -1,0 +1,102 @@
+body {
+ font-family: Roboto, sans-serif;
+ font-size: 16px;
+ line-height: 1.2;
+ font-style: normal;
+ letter-spacing: 0.03em;
+}
+
+ul,
+a,
+li {
+ text-decoration: none; 
+ list-style-type: none;
+}
+
+h1 {
+ font-size: 44px;
+ line-height: 1.4;
+ text-align: center;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+}
+
+h2 {
+ font-size: 36px;
+ text-align: center;
+}
+
+.hero-btn {
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.doing-txt{
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features h3 {
+ font-weight: 700;
+ font-size: 14px;
+ text-transform: uppercase;
+}
+
+.features p {
+ font-size: 14px;
+ line-height: 1.7;
+}
+
+.command h3 {
+ text-align: center;
+}
+
+.command p {
+ text-align: center;
+}
+
+.logo, .logowite {
+ font-family: Raleway, sans-serif;
+ font-size: 26px;
+}
+
+.map {
+ font-size: 14px;
+ line-height: 1.7; 
+ font-style: normal;
+}
+
+.subscribe,
+.cammon {
+ font-size: 14px;
+ line-height: 16px;
+ text-transform: uppercase;
+}
+
+.developer {
+ font-size: 12px;
+ text-align: center;
+}
+
+
+/* стили текста в портфолио */
+
+.link-portfolio {
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+.example-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.example-discr {
+  
+  line-height: 1.8;
+  text-align: center;
+}

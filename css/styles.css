@@ -1,41 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --head-and-subhead-color: #212121;
+  --paragraf-color: #757575;
+  --accent-color: #2196F3;
+  --icons-color: #AFB1B8;
+  --background-color-footer: #2F303A;
+  --background-text-footer: #ffffff;
+}
+
 body {
- font-family: Roboto, sans-serif;
- font-size: 16px;
- line-height: 1.2;
- font-style: normal;
- letter-spacing: 0.03em;
+  margin: 0;
 }
 
 ul,
 a,
-li {
- text-decoration: none; 
- list-style-type: none;
-}
-
-h1 {
- font-size: 44px;
- line-height: 1.4;
- text-align: center;
- letter-spacing: 0.06em;
- text-transform: uppercase;
+li,
+h1,
+h2,
+h3,
+p,
+b {
+  text-decoration: none; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
 }
 
 h2 {
- font-size: 36px;
- text-align: center;
+  font-size: 36px;
+  text-align: center;
+}
+ 
+ /* цвет текстов:
+ #2196F3; - ссылки, кнопки и обводки
+ #212121 заголовки и подзаоловки - первичный цвет;
+ #757575; - параграфы - вторичный цвет
+ #AFB1B8; - все иконки
+ rgba(255, 255, 255, 0.6);
+ 
+ background color:
+ основной - #FFFFFF;
+ вторичный - #F5F4FA;
+ футер - #2F303A;
+ */
+ 
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
-.hero-btn {
-  font-weight: 700;
-  line-height: 30px;
+.conteiner {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid grey;
+}
+
+.link,
+.example-title,
+.link-portfolio {
+  color: var(--head-and-subhead-color);
+}
+
+/* navigation-conteiner */
+
+.logo {
+  color: var(--accent-color);
+  }
+  
+.logo-white {
+  color: white;
+}
+
+.logo-black {
+color: black
+}
+
+.features-spy {
+  color: grey;
+}
+
+/* header-conteiner */
+
+.header-navigation {
+  outline: 2px solid grey;
+}
+
+.header-buttons {
+  outline: 2px solid grey;
+}
+
+.header-hero {
+  outline: 2px solid grey;
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+ color: gray;
+  /* color: var(--background-text-footer); */
+ }
+
+.button-hero {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 14px 20px 14px 20px;
+  text-align: center;
+  outline: 2px solid transparent;
+  border-radius: 4px;
+  
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
 }
 
-.doing-txt{
+/* Преимущества features */
+
+.doing-txt {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 27px 90px 27px 90px;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 0px 0px 4px 4px;
+
+  color: var(--background-text-footer);
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.logowite span,
+.link:focus, 
+.link:hover,
+.mailtel:focus,
+.mailtel:hover {
+color: var(--accent-color);
+}
+
+.link:active,
+.mailtel:active, {
+color: white;
+}
+
+.activ {
+  color: var(--accent-color);
+}
+
+.mailtel,
+.example-discr {
+color: var(--paragraf-color);
+}
+
+footer {
+  color: var(--background-text-footer);
+  background: var( --background-color-footer);
+}
+
+footer .mailtel {
+color: rgba(255, 255, 255, 0.6);
+}
+
+footer .developed {
+color: rgba(255, 255, 255, 0.4);
+}
+
+.subscribe a { 
+color: var(--background-text-footer);
+}
+
+.par-txt {
+color: var(--paragraf-color)
+}
+
+/*  стили цвета в портфолио */
+
+.link-portfolio:focus,
+.link-portfolio:active {
+  color: white;
+}
+
+.link-portfolio:hover {
+  color: var(--accent-color);
 }
 
 .features h3 {
@@ -75,6 +237,26 @@ h2 {
  text-transform: uppercase;
 }
 
+.subscribe > .button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  vertical-align: bottom;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+}
+
+.iconsend {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
 .developer {
  font-size: 12px;
  text-align: center;
@@ -95,8 +277,7 @@ h2 {
   text-align: center;
 }
 
-.example-discr {
-  
+.example-discr {  
   line-height: 1.8;
   text-align: center;
 }

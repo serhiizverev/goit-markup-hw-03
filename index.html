@@ -5,62 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/colorsstyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
   </head>
 <body>
   <!-- Шапка сайта с навигацией conteiner -->
-  <header>
-    <p class="logo">
-      <b>Web&nbsp;<span class="logo-black">Studio</span></b>
-    </p>
-    <nav>
-      <ul>
-        <li>
-          <a href="#" class="activ">
-            Студия
+  <header class="conteiner">
+      <div class="header-navigation">
+        <p class="logo">
+          <b>Web&nbsp;<span class="logo-black">Studio</span></b>
+        </p>
+        <nav>
+          <ul>
+             <li>
+              <a href="#" class="activ">
+                Студия
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">
+                Портфолио
+              </a>
+            </li>
+            <li>
+              <a href="./contacts.html" class="link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-buttons" >
+        <ul>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mailtel">
+              <img src="./images/envelope.svg"alt="иконка почтового конверта"/>
+                info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="mailtel">
+              <img src="./images/smartphone.svg" alt="иконка телефона" />
+                &plus;38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
+            </a>
+          </li>
+        </ul>
+      </div>
+        
+      <div class="header-hero">
+        <section>
+            <!-- <img src="./images/main_foto.svg" alt="Photo of our employees" /> -->
+          <h1>
+            <b>эффективные решения<br>для вашего бизнеса</b>
+          </h1>       
+          <a class="button" href="#">
+            <b>Заказать услугу</b>
           </a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="link">
-            Портфолио
-          </a>
-        </li>
-        <li>
-          <a href="./contacts.html" class="link">
-            Контакты
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="mailtel">
-            <img src="./images/envelope.svg"alt="иконка почтового конверта"/>
-              info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="mailtel">
-            <img src="./images/smartphone.svg" alt="иконка телефона" />
-              &plus;38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <img src="./images/main_foto.svg" alt="Photo of our employees" />
-    <h1 class="hero-txt">
-      <b>эффективные решения для вашего бизнеса</b>
-    </h1>
-    <a href="#" class="hero-btn">
-      Заказать услугу
-    </a>
+        </section>
+      </div>
   </header>
 
   <main>
-    <!-- Преимущества компании conteiner -->
+    <!-- section Преимущества компании conteiner -->
     <section>
-      <div class="features">
+      <div class="conteiner features">
         <!-- данный заголовок в секции не учитываем при офрмлении стилей -->
         <h2 class="features-spy">
           Преимущества нашей компании
@@ -112,34 +120,36 @@
 
     <!-- Чем мы занимаемся conteiner  -->
     <section>
-      <h2>
-        Чем мы занимаемся
-      </h2>
-      <ul>
-        <li>
-          <img src="./images/doing/img_a.svg" alt="фотография с ноутбуком" />
-          <h3 class="doing-txt">
-            Десктопные приложения
-          </h3>
-        </li>
-        <li>
-          <img src="./images/doing/img_b.svg" alt="фотография с мобильным телефоном" />
-          <h3 class="doing-txt">
-            Мобильные приложения
-          </h3>
-        </li>
-        <li>
-          <img src="./images/doing/img_c.svg" alt="фотография с гравической программой" />
-          <h3 class="doing-txt">
-            Дизайнерские решения
-          </h3>
-        </li>
-      </ul>
+      <div class="conteiner doing">
+        <h2>
+          Чем мы занимаемся
+        </h2>
+        <ul>
+          <li>
+            <img src="./images/doing/img_a.svg" alt="фотография с ноутбуком" />
+            <h3 class="doing-txt">
+              Десктопные приложения
+            </h3>
+          </li>
+          <li>
+            <img src="./images/doing/img_b.svg" alt="фотография с мобильным телефоном" />
+            <h3 class="doing-txt">
+              Мобильные приложения
+            </h3>
+          </li>
+          <li>
+            <img src="./images/doing/img_c.svg" alt="фотография с гравической программой" />
+            <h3 class="doing-txt">
+              Дизайнерские решения
+            </h3>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Наша команда conteiner -->
     <section>
-      <div class="command">
+      <div class="conteiner command">
         <h2>
           Наша команда
         </h2>
@@ -274,35 +284,38 @@
 
     <!-- Клиенты компании conteiner -->
     <section>
-      <h2>
-        Постоянные клиенты
-      </h2>
-      <ul>
-        <li>
-          <img src="./images/client/a.svg" alt="логотип компании клиента a" />
-        </li>
-        <li>
-          <img src="./images/client/b.svg" alt="логотип компании клиента b" />
-        </li>
-        <li>
-          <img src="./images/client/c.svg" alt="логотип компании клиента c" />
-        </li>
-        <li>
-          <img src="./images/client/d.svg" alt="логотип компании клиента d" />
-        </li>
-        <li>
-          <img src="./images/client/e.svg" alt="логотип компании клиента e" />
-        </li>
-        <li>
-          <img src="./images/client/f.svg" alt="логотип компании клиента f" />
-        </li>
-      </ul>
+      <div class="conteiner clients">
+        <h2>
+          Постоянные клиенты
+        </h2>
+        <ul>
+          <li>
+            <img src="./images/client/a.svg" alt="логотип компании клиента a" />
+          </li>
+          <li>
+            <img src="./images/client/b.svg" alt="логотип компании клиента b" />
+          </li>
+          <li>
+            <img src="./images/client/c.svg" alt="логотип компании клиента c" />
+          </li>
+          <li>
+            <img src="./images/client/d.svg" alt="логотип компании клиента d" />
+          </li>
+          <li>
+            <img src="./images/client/e.svg" alt="логотип компании клиента e" />
+          </li>
+          <li>
+            <img src="./images/client/f.svg" alt="логотип компании клиента f" />
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <!-- подвал conteiner -->
   <footer>
-    <!-- левая верхняячасть футера -->
+    <div class="conteiner">
+      <!-- левая верхняячасть футера -->
     <div>
       <p class="logo">
        <b>Web&nbsp;<span class="logo-white">Studio</span></b>
@@ -353,8 +366,8 @@
       <p>
         <b>Подписаться на рассылку</b>
       </p>
-      <a href="">
-        <b>Подписаться</b>
+      <a class="button" href="#">
+        <b>Подписаться</b><span class="iconsend"><img src="./images/icon-send.svg" alt=""></span>
       </a>
     </div>        
 
@@ -364,9 +377,8 @@
         2020 | Developed by GoIT Students
       </p>
     </div>
+    </div>    
   </footer>
 
-  <!-- указатель в виде пальца - пока не понимаю, нужно ли было его вносить в разметку HTML? -->
-  <img src="./images/fingers/finger_dark.svg" alt="указатель в виде пальца" />
 </body>
 </html>

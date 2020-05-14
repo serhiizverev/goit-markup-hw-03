@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/colors.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
   </head>
 <body>
   <!-- Шапка сайта с навигацией conteiner -->
-  <header class="conteiner">
+  <header class="header-conteiner">
+    <div class="conteiner">
       <div class="header-navigation">
         <p class="logo">
           <b>Web&nbsp;<span class="logo-black">Studio</span></b>
         </p>
-        <nav>
+        <nav class="navigation">
           <ul>
              <li>
               <a href="#" class="activ">
@@ -51,261 +53,316 @@
           </li>
         </ul>
       </div>
-        
-      <div class="header-hero">
-        <section>
-            <!-- <img src="./images/main_foto.svg" alt="Photo of our employees" /> -->
-          <h1>
-            <b>эффективные решения<br>для вашего бизнеса</b>
-          </h1>       
-          <a class="button" href="#">
-            <b>Заказать услугу</b>
-          </a>
-        </section>
-      </div>
+    </div>
   </header>
 
   <main>
+    <section class="header-hero">
+          <!-- <img src="./images/main_foto.svg" alt="Photo of our employees" /> -->
+      <div>
+        <h1>
+          <b>эффективные решения<br>для вашего бизнеса</b>
+        </h1> 
+      </div>      
+      <div>
+        <a class="button-hero" href="#">
+          <b>Заказать услугу</b>
+        </a>
+      </div>
+    </section>
+
     <!-- section Преимущества компании conteiner -->
-    <section>
-      <div class="conteiner features">
-        <!-- данный заголовок в секции не учитываем при офрмлении стилей -->
-        <h2 class="features-spy">
+    <section class="conteiner">
+      <div class="features">
+        <!-- данный заголовок не отображается в браузере -->
+        <h2 class="is-hidden">
           Преимущества нашей компании
         </h2>
-        <ul>
-          <li>
-            <img src="./images/features/antena.svg" alt="иконка радара для поиска"/>
-            <h3>
-              Внимание к деталям
-            </h3>
-            <p class="par-txt">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <img src="./images/features/clock.svg" title="наша пунктуальность заслуживает уважения" />
-            <h3>
-              Пунктуальность
-            </h3>
-            <p class="par-txt">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <img src="./images/features/diagram.svg" alt="иконка с диаграммой" title="постоянно держим руку на пульсе" />
-            <h3>
-              Планирование
-            </h3>
-            <p class="par-txt">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <img src="./images/features/astronaut.svg" alt="иконка с космонавтом" title="мы следим за современными технологиями"  />
-            <h3>
-              Современные технологии
-            </h3>
-            <p class="par-txt">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
+        <ul> 
+          <div class="features-box">
+            <li>
+              <div class="img-features">
+                <img src="./images/features/antena.svg" alt="иконка радара для поиска"/>
+              </div>
+              <h3>
+                Внимание к деталям
+              </h3>
+              <p class="par-txt">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+          </div>
+          <div class="features-box">
+            <li>
+              <div class="img-features">
+                <img src="./images/features/clock.svg" title="наша пунктуальность заслуживает уважения" />
+              </div>            
+              <h3>
+                Пунктуальность
+              </h3>
+              <p class="par-txt">
+                Задача организации, в особенности же рамки и место обучения кадров
+                влечет за собой.
+              </p>
+            </li>
+          </div>
+          <div class="features-box">
+            <li>
+              <div class="img-features">
+                <img src="./images/features/diagram.svg" alt="иконка с диаграммой" title="постоянно держим руку на пульсе" />
+              </div>  
+              <h3>
+                Планирование
+              </h3>
+              <p class="par-txt">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+          </div>
+          <div class="features-box">
+            <li>
+              <div class="img-features">
+                <img src="./images/features/astronaut.svg" alt="иконка с космонавтом" title="мы следим за современными технологиями"  />
+              </div>  
+              <h3>
+                Современные технологии
+              </h3>
+              <p class="par-txt">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
 
     <!-- Чем мы занимаемся conteiner  -->
-    <section>
-      <div class="conteiner doing">
+    <section class="conteiner">
+      <div class="doing">
         <h2>
           Чем мы занимаемся
         </h2>
-        <ul>
-          <li>
-            <img src="./images/doing/img_a.svg" alt="фотография с ноутбуком" />
-            <h3 class="doing-txt">
-              Десктопные приложения
-            </h3>
-          </li>
-          <li>
-            <img src="./images/doing/img_b.svg" alt="фотография с мобильным телефоном" />
-            <h3 class="doing-txt">
-              Мобильные приложения
-            </h3>
-          </li>
-          <li>
-            <img src="./images/doing/img_c.svg" alt="фотография с гравической программой" />
-            <h3 class="doing-txt">
-              Дизайнерские решения
-            </h3>
-          </li>
-        </ul>
+        <div class="block-doing">
+          <ul>
+            <li class="block-doing-txt">
+              <div class="img-doing">
+                <img src="./images/doing/img_a.svg" alt="фотография с ноутбуком" />
+              </div>
+              <h3 class="doing-txt">
+                Десктопные приложения
+              </h3>
+            </li>
+            <li class="block-doing-txt">
+              <div class="img-doing">
+                <img src="./images/doing/img_b.svg" alt="фотография с мобильным телефоном" />
+              </div>
+              <h3 class="doing-txt">
+                Мобильные приложения
+              </h3>
+            </li>
+            <li class="block-doing-txt">
+              <div class="img-doing">
+                <img src="./images/doing/img_c.svg" alt="фотография с гравической программой" />
+              </div>
+              <h3 class="doing-txt">
+                Дизайнерские решения
+              </h3>
+            </li>
+          </ul>
+        </div>        
       </div>
     </section>
 
     <!-- Наша команда conteiner -->
-    <section>
-      <div class="conteiner command">
+    <section class="command">
+      <div class="conteiner">
         <h2>
           Наша команда
         </h2>
         <ul>
           <li>
-            <img src="./images/comand/js.svg" alt="Фотография нашего сотрудника" />
+            <div class="img-comand" >
+              <img src="./images/comand/js.svg" alt="Фотография нашего сотрудника" />
+            </div>
             <h3>
               John Smith
             </h3>
             <p class="par-txt">
               Product Designer
             </p>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/">
-                  <img src="./images/inst.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <img src="./images/twit.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/">
-                  <img src="./images/fb.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/">
-                  <img src="./images/in.svg" alt="" />
-                </a>
-              </li>
-            </ul>
+            <div class="command-soc-link">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="./images/inst.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <img src="./images/twit.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="./images/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <img src="./images/in.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <img src="./images/comand/ms.svg" alt="Фотография нашего сотрудника" />
+            <div class="img-comand" >
+              <img src="./images/comand/ms.svg" alt="Фотография нашего сотрудника" />
+            </div>
             <h3>
               Marta Stewart
             </h3>
             <p class="par-txt">
               Frontend Developer
             </p>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/">
-                  <img src="./images/inst.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <img src="./images/twit.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/">
-                  <img src="./images/fb.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/">
-                  <img src="./images/in.svg" alt="" />
-                </a>
-              </li>
-            </ul>
+            <div class="command-soc-link">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="./images/inst.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <img src="./images/twit.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="./images/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <img src="./images/in.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <img src="./images/comand/rj.svg" alt="Фотография нашего сотрудника" />
+            <div class="img-comand" >
+              <img src="./images/comand/rj.svg" alt="Фотография нашего сотрудника" />
+            </div>
             <h3>
               Robert Jakis
             </h3>
             <p class="par-txt">
               Marketing
             </p>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/">
-                  <img src="./images/inst.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <img src="./images/twit.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/">
-                  <img src="./images/fb.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/">
-                  <img src="./images/in.svg" alt="" />
-                </a>
-              </li>
-            </ul>
+            <div class="command-soc-link">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="./images/inst.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <img src="./images/twit.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="./images/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <img src="./images/in.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <img src="./images/comand/md.svg" alt="Фотография нашего сотрудника" />
+            <div class="img-comand" >
+              <img src="./images/comand/md.svg" alt="Фотография нашего сотрудника" />
+            </div>
             <h3>
               Martin Doe
             </h3>
             <p class="par-txt">
               UI Designer
             </p>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/">
-                  <img src="./images/inst.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/">
-                  <img src="./images/twit.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/">
-                  <img src="./images/fb.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/">
-                  <img src="./images/in.svg" alt="" />
-                </a>
-              </li>
-            </ul>
+            <div class="command-soc-link">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="./images/inst.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <img src="./images/twit.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <img src="./images/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <img src="./images/in.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Клиенты компании conteiner -->
-    <section>
-      <div class="conteiner clients">
+    <section class="conteiner">
+      <div class="clients">
         <h2>
           Постоянные клиенты
         </h2>
         <ul>
           <li>
-            <img src="./images/client/a.svg" alt="логотип компании клиента a" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/a.svg" alt="логотип компании клиента a" />
+            </div>
           </li>
           <li>
-            <img src="./images/client/b.svg" alt="логотип компании клиента b" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/b.svg" alt="логотип компании клиента b" />
+            </div>
           </li>
           <li>
-            <img src="./images/client/c.svg" alt="логотип компании клиента c" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/c.svg" alt="логотип компании клиента c" />
+            </div>
           </li>
           <li>
-            <img src="./images/client/d.svg" alt="логотип компании клиента d" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/d.svg" alt="логотип компании клиента d" />
+            </div>
           </li>
           <li>
-            <img src="./images/client/e.svg" alt="логотип компании клиента e" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/e.svg" alt="логотип компании клиента e" />
+            </div>
           </li>
           <li>
-            <img src="./images/client/f.svg" alt="логотип компании клиента f" />
+            <div class="img-clients">
+              <img class="displayed" src="./images/client/f.svg" alt="логотип компании клиента f" />
+            </div>
           </li>
         </ul>
       </div>
@@ -337,28 +394,30 @@
           Присоединяйтесь
         </b>
       </p>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/">
-            <img src="./images/inst.svg" alt="ссылка на соц.сеть" />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/">
-            <img src="./images/twit.svg" alt="ссылка на соц.сеть" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/">
-            <img src="./images/fb.svg" alt="ссылка на соц.сеть" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/">
-            <img src="./images/in.svg" alt="ссылка на соц.сеть" />
-          </a>
-        </li>
-      </ul>
+      <div class="footer-soc-link">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./images/inst.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <img src="./images/twit.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="./images/fb.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/">
+              <img src="./images/in.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>      
 
     <!-- правая верхняя часть футера с подпиской -->

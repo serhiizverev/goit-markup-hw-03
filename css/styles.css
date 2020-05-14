@@ -8,17 +8,14 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --head-and-subhead-color: #212121;
-  --paragraf-color: #757575;
-  --accent-color: #2196F3;
-  --icons-color: #AFB1B8;
-  --background-color-footer: #2F303A;
-  --background-text-footer: #ffffff;
-}
-
 body {
-  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul,
@@ -40,186 +37,172 @@ h2 {
   text-align: center;
 }
  
- /* цвет текстов:
- #2196F3; - ссылки, кнопки и обводки
- #212121 заголовки и подзаоловки - первичный цвет;
- #757575; - параграфы - вторичный цвет
- #AFB1B8; - все иконки
- rgba(255, 255, 255, 0.6);
- 
- background color:
- основной - #FFFFFF;
- вторичный - #F5F4FA;
- футер - #2F303A;
- */
- 
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  font-style: normal;
-  letter-spacing: 0.03em;
-}
-
 .conteiner {
   width: 1230px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid grey;
-}
-
-.link,
-.example-title,
-.link-portfolio {
-  color: var(--head-and-subhead-color);
-}
-
-/* navigation-conteiner */
-
-.logo {
-  color: var(--accent-color);
-  }
-  
-.logo-white {
-  color: white;
-}
-
-.logo-black {
-color: black
-}
-
-.features-spy {
-  color: grey;
+  outline: 1px solid grey;
 }
 
 /* header-conteiner */
 
-.header-navigation {
-  outline: 2px solid grey;
-}
+/* .header-navigation {
+  outline: 1px solid  rgb(179, 178, 178);
+} */
 
-.header-buttons {
+
+/* .header-buttons {
+  display: inline-block;
   outline: 2px solid grey;
-}
+} */
 
 .header-hero {
-  outline: 2px solid grey;
+  outline: 1px solid rgb(179, 178, 178);
   text-align: center;
 }
 
 h1 {
+  display: inline-block;
+  margin-top: 200px;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
- color: gray;
-  /* color: var(--background-text-footer); */
- }
+}
 
 .button-hero {
   display: inline-block;
   width: 200px;
   height: 50px;
+  margin-top: 46px;
+  margin-bottom: 200px;
   padding: 14px 20px 14px 20px;
   text-align: center;
   outline: 2px solid transparent;
   border-radius: 4px;
-  
-  color: var(--background-text-footer);
-  background-color: var(--accent-color);
 }
 
 /* Преимущества features */
 
-.doing-txt {
+/* .features-box {
   display: inline-block;
-  margin-bottom: 30px;
-  padding: 27px 90px 27px 90px;
-  font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 0px 0px 4px 4px;
-
-  color: var(--background-text-footer);
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.logowite span,
-.link:focus, 
-.link:hover,
-.mailtel:focus,
-.mailtel:hover {
-color: var(--accent-color);
-}
-
-.link:active,
-.mailtel:active, {
-color: white;
-}
-
-.activ {
-  color: var(--accent-color);
-}
-
-.mailtel,
-.example-discr {
-color: var(--paragraf-color);
-}
-
-footer {
-  color: var(--background-text-footer);
-  background: var( --background-color-footer);
-}
-
-footer .mailtel {
-color: rgba(255, 255, 255, 0.6);
-}
-
-footer .developed {
-color: rgba(255, 255, 255, 0.4);
-}
-
-.subscribe a { 
-color: var(--background-text-footer);
-}
-
-.par-txt {
-color: var(--paragraf-color)
-}
-
-/*  стили цвета в портфолио */
-
-.link-portfolio:focus,
-.link-portfolio:active {
-  color: white;
-}
-
-.link-portfolio:hover {
-  color: var(--accent-color);
-}
+  width: 278px;
+  height: 251px;
+  border: 2px solid black;
+} */
 
 .features h3 {
- font-weight: 700;
- font-size: 14px;
- text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 30px;
+ }
+ 
+ .features p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 10px;
+ }
+
+ .img-features {
+   display: block;
+   width: 278px;
+   height: 120px;
+   margin-top: 94px;   
+ }
+
+ /* Чем мы занимаемся */
+
+.doing h2 {
+  margin-top: 94px;
 }
 
-.features p {
- font-size: 14px;
- line-height: 1.7;
+/* .block-doing {
+
+}
+
+.block-doing-txt {
+
+} */
+
+.img-doing {
+  display: block;
+  width: 380px;
+  height: 294px;
+  margin-top: 50px;  
+}
+
+.doing-txt {
+  width: 380px;
+  line-height: 70px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Наша команда */
+
+.command h2 {
+  margin-top: 94px;
+}
+
+.img-comand {
+  display: block;
+  width: 278px;
+  height: 260px;
+  margin-top: 50px;  
 }
 
 .command h3 {
  text-align: center;
+ margin-top: 30px;
 }
 
 .command p {
- text-align: center;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.logo, .logowite {
+.command-soc-link {
+  display: block;
+  margin-top: 16px;
+}
+
+/* Постоянные клиенты секция */
+
+.clients h2 {
+  margin-top: 94px;
+}
+
+.img-clients {
+  display: block;
+  margin-top: 50px;
+  
+  width: 175px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------ */
+/* footer */
+
+footer {
+  margin-top: 94px;
+}
+
+.logo,
+.logowite {
  font-family: Raleway, sans-serif;
  font-size: 26px;
 }
@@ -246,10 +229,11 @@ color: var(--paragraf-color)
   vertical-align: bottom;
   border: 2px solid transparent;
   border-radius: 4px;
-  
-  color: var(--background-text-footer);
-  background-color: var(--accent-color);
 }
+
+/* .footer-soc-link {
+
+} */
 
 .iconsend {
   display: inline-block;
@@ -263,21 +247,56 @@ color: var(--paragraf-color)
 }
 
 
-/* стили текста в портфолио */
+
+/* --------------------------- */
+/* PORTFOLIO page */
+
+.conteiner-portfolio {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid grey;
+}
+
+.filtrs-batton {
+  display: flexbox;
+  margin-top: 94px;
+  border: 1px solid yellow;
+}
 
 .link-portfolio {
+  display: inline-block;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
+  margin: 0px 8px;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
+
+.projeck-conteiner {
+  display: flexbox;
+  margin-top: 50px;
+}
+
+/* .project-box {
+
+} */
+
+.img-projeckt-box {
+  display: block;
+}
+
 .example-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: center;
+  margin-top: 20px;
 }
 
 .example-discr {  
   line-height: 1.8;
   text-align: center;
+  margin-top: 4px;
 }

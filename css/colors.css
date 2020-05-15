@@ -29,9 +29,11 @@ body {
   /* background-color: rgba(203, 208, 224, 0.479); */
 }
 
+/* Фон контейнера команда */
 .command {
   background-color: var(--background-color-command);
 }
+/* +++++++++++++++++++++++ */
 
 .link,
 .example-title {

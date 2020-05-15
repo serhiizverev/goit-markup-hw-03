@@ -306,6 +306,37 @@ footer {
   margin-top: 94px;
 }
 
+.footer-conteiner .conteiner {
+  display: flex;
+}
+
+.footer-left {
+  display: block;
+  margin-top: 48px;
+  margin-left: 15px;
+}
+
+.footer-cammon {
+  display: block;
+  margin-top: 56px;
+  margin-left: 179px;
+}
+
+.footer-cammon > ul {
+  display: flex;
+}
+
+.mailtel {
+  line-height: 1.7;
+}
+
+.subscribe {
+  display: block;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
 .logo,
 .logowite {
  font-family: Raleway, sans-serif;
@@ -313,13 +344,14 @@ footer {
 }
 
 .map {
- font-size: 14px;
- line-height: 1.7; 
- font-style: normal;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7; 
+  font-style: normal;
 }
 
 .subscribe,
-.cammon {
+.footer-cammon {
  font-size: 14px;
  line-height: 16px;
  text-transform: uppercase;
@@ -346,9 +378,13 @@ footer {
   margin-left: 12px;
 }
 
-.developer {
- font-size: 12px;
- text-align: center;
+.developed {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 28px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);;
 }
 
 

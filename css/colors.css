@@ -95,9 +95,9 @@ h1 {
   color: var(--paragraf-color);
 }
 
-footer {
+.footer-conteiner {
   color: var(--background-text-footer);
-  background: var( --background-color-footer);
+  background-color: var(--background-color-footer);
 }
 
 footer .mailtel {

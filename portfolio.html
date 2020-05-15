@@ -11,51 +11,38 @@
   </head>
 <body>
 
-  <!-- Шапка сайта с навигацией conteiner -->
-  <header class="header-conteiner">
-    <div class="conteiner">
-      <div class="header-navigation">
-        <p class="logo">
-          <b>Web&nbsp;<span class="logo-black">Studio</span></b>
-        </p>
-        <nav class="navigation">
-          <ul>
-            <li>
-              <a href="./index.html" class="link">
-                Студия
-              </a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="activ">
-                Портфолио
-              </a>
-            </li>
-            <li>
-              <a href="./contacts.html" class="link">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-buttons" >
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="mailtel">
-              <img src="./images/envelope.svg"alt="иконка почтового конверта"/>
-                info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="mailtel">
-              <img src="./images/smartphone.svg" alt="иконка телефона" />
-                &plus;38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
-            </a>
-          </li>
-        </ul>
-      </div>
+<!-- Шапка сайта с навигацией conteiner -->
+<header>
+  <div class="header-nav conteiner">
+    <div class="block-logo">
+      <p class="logo"><b>Web&nbsp;<span class="logo-black">Studio</span></b></p>
     </div>
-  </header>
+    <div class="navigation">
+      <nav>
+        <ul class="site-nav">
+          <li class="item"><a class="link" href="./index.html">Студия</a></li>
+          <li class="item"><a class="link activ" href="./portfolio.html">Портфолио</a></li>
+          <li class="item"><a class="link" href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-buttons" >
+      <ul>
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="mailtel link">
+            <img src="./images/envelope.svg"alt="иконка почтового конверта"/>info@devstudio.com
+          </a>
+        </li>
+        <li class="item">
+          <a href="tel:+380961111111" class="mailtel link">
+            <img src="./images/smartphone.svg" alt="иконка телефона" />
+              &plus;38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
  <main class="conteiner-portfolio">
    <!-- данный заголовок не отображается в браузере -->
@@ -64,25 +51,25 @@
   </h1>
   <div class="filtrs-batton">
     <ul>
-      <li>
-        <a href="#" class="link-portfolio">Все</a>
+      <li class="link-portfolio">
+        <a href="#" >Все</a>
       </li>
-      <li>
-        <a href="#" class="link-portfolio">Веб-сайты</a>
+      <li class="link-portfolio">
+        <a href="#">Веб-сайты</a>
       </li>
-      <li>
-        <a href="#" class="link-portfolio">Приложения</a>
+      <li class="link-portfolio">
+        <a href="#">Приложения</a>
       </li>
-      <li>
-        <a href="#" class="link-portfolio">Дизайн</a>
+      <li class="link-portfolio">
+        <a href="#">Дизайн</a>
       </li>
-      <li>
-        <a href="#" class="link-portfolio">Маркетинг</a>
+      <li class="link-portfolio">
+        <a href="#">Маркетинг</a>
       </li>
     </ul>
   </div>
-  <div class="projeck-conteiner">
-    <ul>
+  <div >
+    <ul class="projeck-conteiner">
       <li class="project-box">
         <a href="#">
           <img class="img-projeckt-box" src="./images/portfolio/bgtehnokrjak_a.svg" alt="фотография компании наших клиентов" />

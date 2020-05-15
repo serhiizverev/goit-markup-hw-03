@@ -26,7 +26,7 @@ body {
 }
 
 .header-conteiner {
-  background-color: rgba(203, 208, 224, 0.479);
+  /* background-color: rgba(203, 208, 224, 0.479); */
 }
 
 .command {
@@ -116,17 +116,17 @@ footer .developed {
 
 /*  стили цвета в портфолио */
 
-.link-portfolio {
+.link-portfolio > a {
   color: var(--head-and-subhead-color);
   background-color: var(--background-color-command);
 }
 
-.link-portfolio:active {
+.link-portfolio > a:active {
   color: white;
 }
 
-.link-portfolio:hover,
-.link-portfolio:focus {
+.link-portfolio > a:hover,
+.link-portfolio > a:focus {
   color: var(--background-text-footer);
   background-color: var(--accent-color);
 }

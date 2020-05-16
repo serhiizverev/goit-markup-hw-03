@@ -88,6 +88,9 @@ h1 {
 
 .activ {
   color: var(--accent-color);
+
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px ;
 }
 
 .mailtel,

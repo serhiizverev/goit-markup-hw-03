@@ -121,19 +121,36 @@ footer .developed {
 
 /*  стили цвета в портфолио */
 
-.link-portfolio > a {
+/* .list-portfolio >a {
   color: var(--head-and-subhead-color);
   background-color: var(--background-color-command);
 }
 
-.link-portfolio > a:active {
-  color: white;
-}
-
-.link-portfolio > a:hover,
-.link-portfolio > a:focus {
+.list-portfolio:active {
   color: var(--background-text-footer);
   background-color: var(--accent-color);
+}
+
+.list-portfolio:hover,
+.list-portfolio:focus {
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+} */
+
+.link-portfolio {
+  color: var(--head-and-subhead-color);
+  background-color: var(--background-color-command);
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+  color: var(--background-text-footer);
+  background-color: var(--accent-color);
+}
+
+.link-portfolio:active {
+  color: var(--head-and-subhead-color);
+  background-color: var(--paragraf-color);
 }
 
 .subscribe > .button {
